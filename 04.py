@@ -24,5 +24,3 @@ elif pilih =='C':
           
 else:
     print()
-        
-       

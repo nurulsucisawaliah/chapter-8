@@ -4,27 +4,19 @@ print('B. Hapus data sayur')
 print('C. Tampilkan data')
 print()
 
-sayur = ('bayam', 'kangkung', 'wortel', 'selada')
+sayur = ['bayam', 'kangkung', 'wortel', 'selada']  
 pilih = input('Pilihan saya adalah : ')
 if  pilih == 'A' :
-    print('Tambah data sayur')
-    print(sayur)
-    vegetable = list(sayur)
-    print()
+    print('Tambah data sayur' +':' + str(sayur))
     newSayur = input('Masukan tambahan sayur : ')
-    vegetable.append(newSayur)
-    sayur_mayur = tuple(vegetable)
-    print(sayur_mayur)
+    sayur.append(newSayur)
+    print(sayur)
         
 elif pilih =='B':
-    print('Hapus data sayur')
-    print(sayur)
-    vegetable = list(sayur)
-    print()
+    print('Hapus data sayur' + ':' + str(sayur))
     delete = input('Masukan data sayur yang ingin dihapus: ')
-    vegetable.remove(delete)
-    del_sayur = tuple(vegetable)
-    print(del_sayur)
+    sayur.remove(delete)
+    print(sayur)
         
 elif pilih =='C':
     print('Tampilkan data')
